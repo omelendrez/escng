@@ -1,0 +1,26 @@
+/* Carousel elements */
+
+.item img {
+	height: 360px;
+	width: 100%;
+}
+
+.carousel-control {
+	border: 0;
+	background: 0;
+	text-shadow: 0 1px 4px #000;
+	top: 50%;
+}
+
+.carousel-caption {
+	background: 0;
+	color: #fff;
+	font-size: 1.5em;
+	line-height: 2em;
+	margin: 1em 4em;
+	width: 50%;
+	text-shadow: 0 1px 4px #000;
+}
+
+
+/* Other contents */
