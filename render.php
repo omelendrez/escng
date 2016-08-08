@@ -4,8 +4,17 @@
 <?php
 
 $page = $_GET["page"];
+
+
+
 $style = file_exists("static/css/{$page}.css");
+
+
+
 $script = file_exists("static/js/{$page}.js");
+
+
+
 
 ?>
 
@@ -16,7 +25,7 @@ $script = file_exists("static/js/{$page}.js");
 		<title>Enterprise Systems Consultancy Ltd.</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Enterprise Systems Consultancy Ltd. A 100% Nigerian IT solutions company that specializes in the provision and delivery of industry-standard IT infrastructure, innovative and interactive database-driven web application solutions and executive IT training and workshops">
-    	<meta name="keywords" content="escng,erp,mis,hrms,hris,training,programming,payroll,database,applications,blackberry,android,mobile applications,consultancy,axis,nigeria">
+    	<meta name="keywords" content="escng,erp,mis,hrms,hris,training,programming,payroll,database,applications,blackberry,android,mobile applications,consultancy,axis,pjtracker,nigeria">
     	<meta name="robots" content="index, follow">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	
@@ -29,10 +38,19 @@ $script = file_exists("static/js/{$page}.js");
 		
 		<!-- Page styles -->
 		<?php
-			if ($style) {
-				echo '<link rel="stylesheet" href="static/css/' . $page . '.css" media="screen">';
-			}
-		?>
+if ($style) {
+	
+	
+	
+	echo '<link rel="stylesheet" href="static/css/' . $page . '.css" media="screen">';
+	
+	
+	
+}
+
+
+
+?>
 		
 	</head>
 	
@@ -49,16 +67,22 @@ $script = file_exists("static/js/{$page}.js");
 	                    <li><a href="about">ABOUT US</a></li>
 	                    <li><a href="services">SERVICES</a></li>
 	                    <li><a href="solutions">SOLUTIONS</a></li>
+					<!--<li><a href="clients">CLIENTS</a></li>-->
 	                    <li><a href="contact">CONTACT US</a></li>
 	                </ul>
+					<!--
 	                <form class="navbar-search pull-right tall" action="search" method="get">
 	                	<input class="search-query" type="text" name="q" placeholder="Search...">
 	                </form>
+					-->
 	        	</div>
 	       	</div>
 
 			<!-- Page contents --> 
-			<?php include_once("{$page}.html"); ?>
+			<?php include_once("{$page}.html");
+
+
+?>
 			
 			<!-- Footer: included in every page -->
 			<hr>
@@ -71,7 +95,7 @@ $script = file_exists("static/js/{$page}.js");
 				</div>
 				<div id="signature">
 					<p>
-						&copy; 2014 <a href="#">www.escng.com</a><br>
+						&copy; 2016 <a href="#">www.escng.com</a><br>
 						<strong>Enterprise Systems Consultancy Ltd.</strong><br>
 						<em>Your IT partner to success</em>
 					</p>
@@ -87,10 +111,19 @@ $script = file_exists("static/js/{$page}.js");
 		
 		<!-- Page scripts -->
 		<?php
-			if ($script) {
-				echo '<script src="stylesheet" href="static/js/' . $page . '.js" media="screen">';
-			}
-		?>
+if ($script) {
+	
+	
+	
+	echo '<script src="stylesheet" href="static/js/' . $page . '.js" media="screen">';
+	
+	
+	
+}
+
+
+
+?>
 		
 	</body>
 	

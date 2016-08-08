@@ -1,0 +1,26 @@
+# Begin cache control #
+ExpiresActive on
+<FilesMatch "\.(png|bmp|ico|gff|jpg|jpeg|gif|gcf)$">
+FileETag MTime Size
+ExpiresDefault "now plus 240 minutes"
+</FilesMatch>
+
+ExpiresDefault "now plus 15 minutes"
+ExpiresByType text/html "now plus 15 minutes"
+<FilesMatch "\.(css|htm|html|js)$">
+FileETag MTime Size
+ExpiresDefault "now plus 15 minutes"
+</FilesMatch>
+
+
+# End cache control #
+Options +FollowSymlinks -Indexes
+
+RewriteEngine on
+RewriteBase /
+# Redirect / to /home
+RewriteRule ^/?$ /home [L,R]
+# Rewrite all www stuff
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/?(\w+)$ /render.php?page=$1 [L]

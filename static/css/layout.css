@@ -1,5 +1,6 @@
 /* Bootstrap provides most CSS, only customization needed is here */
 
+
 /* Main elements */
 
 body {
@@ -7,6 +8,7 @@ body {
 	color: #ccc;
 	padding: 1em;
 }
+
 
 /* Navbar elements */
 
@@ -40,6 +42,7 @@ h1, .pressed {
 	text-shadow: 0 1px 1px #666;
 }
 
+
 /* Content elements */
 
 #content div {
@@ -48,7 +51,7 @@ h1, .pressed {
 
 hr {
 	border-top: 1px solid #222;
-	border-bottom: 1px solid #666;	
+	border-bottom: 1px solid #666;
 }
 
 li {
@@ -99,6 +102,7 @@ dt {
 	width: 10em;
 }
 
+
 /* Footer elements */
 
 #signature {
@@ -125,8 +129,13 @@ dt {
 	width: 200px;
 }
 
+
 /* clients page */
-.customer-logo
-{
-    width:230px;
+
+.customer-logo {
+	width: 230px;
+}
+
+.logo-area {
+	background-color: #eaeaea;
 }

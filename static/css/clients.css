@@ -1,0 +1,25 @@
+/* Carousel elements */
+
+.carousel-control {
+    border: 0;
+    background: 0;
+    text-shadow: 0 1px 4px #000;
+    top: 50%;
+}
+
+.carousel-caption {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 1em 4em;
+    text-shadow: 0 1px 4px #000;
+}
+
+.static_image {
+    margin: 0;
+    padding: 0;
+    opacity: .4;
+}
+
+
+/* Other contents */
